@@ -14,13 +14,14 @@
     <form id="form1" runat="server">
     <header>
 		<section class="header_top">				
-				
+				<h1>Android, custom ROMs and rooting</h1>
 		</section>
 			
 		<nav class="main_nav">   	
-			<a href="Default.aspx">דף בית</a>
-			<a href="Page1.aspx">דף 1</a>				
+			<a href="Default.aspx">Homepage</a>
+			<a href="Android.aspx">Android</a>	
 		</nav>
+
 	</header>
 		
 	<section class="center">
