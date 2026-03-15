@@ -5,11 +5,15 @@
 
 header, .center, footer {
     min-height: 80px;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
+    border: 2px solid #00FF9D;
 }
 
 header {
-    background-color: white;
+    /* Parent of the title and navbar properties */
+    
+    /*background-color: white;*/
+    background-color: #12161F;
     margin-bottom: 5px;
 }
 
@@ -18,10 +22,17 @@ header {
     display: flex;
 }
 
+body {
+    /* Overall website background */
 
+    background-color: #12161F;
+}
 
 .main_nav {
-    background-color: lightgray;
+    /* Navbar properties */
+    
+    /*background-color: lightgray;*/
+    background-color: #0B0E14;
     min-height: 30px;
     padding-left: 100px;
     padding-right: 100px;
@@ -30,7 +41,8 @@ header {
     .main_nav a {
         text-decoration: none;
         font-size: 24px;
-        color: darkblue;
+        /*color: darkblue;*/
+        color: #00FF9D;
         margin: 10px;
     }
 
@@ -46,7 +58,10 @@ main, aside {
 }
 
 main {
-    background-color: darkblue;
+    /* Body text */
+
+    /*background-color: darkblue;*/
+    background-color: #1A1F29; 
     flex: 4;
     color: white;
     padding: 5px 10px;
@@ -54,12 +69,21 @@ main {
 
 
 aside {
-    background-color: gray;
+    /* Sidebar */
+    
+    /*background-color: gray;*/
+    background-color: #151921;
     flex: 1;
     padding: 5px;
     text-align: center;
 }
 
 footer {
-    background-color: orange;
+    /* Bottom text part */
+    /*background-color: orange;*/
+    background-color: #0B0E14;
+}
+
+.read {
+    color: #E0E6ED;
 }

@@ -14,10 +14,13 @@
     <form id="form1" runat="server">
     <header>
 		<section class="header_top">				
-				<h1>Android, custom ROMs and rooting</h1>
+			<!-- The title of the whole website, static for all pages. -->
+			<img src="images/logo.png" width="85px" height="85px" alt="Bugdroid in recovery mode, used as logo for the website." />
+				<h1 class="read">Android, custom ROMs and rooting</h1>
 		</section>
 			
 		<nav class="main_nav">   	
+			<!-- The navigation bar. -->
 			<a href="Default.aspx">Homepage</a>
 			<a href="Android.aspx">Android</a>	
 		</nav>
@@ -26,17 +29,19 @@
 		
 	<section class="center">
 		<aside>
-				תוכן אזור צד
+			<!-- The side part of the website. -->
+				<p class="read">Here will be a table of content</p>
 		</aside>
 			
-		<main>
+		<main class="read">
+			<!-- The main and big part of the website. -->
 			<asp:ContentPlaceHolder id="ContentPlaceHolderMain" runat="server">
 			</asp:ContentPlaceHolder>
 		</main>
 	</section>
 			
 	<footer>
-			תוכן אזור תחתון
+			<p class="read">Here will be some other stuff</p>
 	</footer>
     </form>
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
