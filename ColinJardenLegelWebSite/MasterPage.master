@@ -23,14 +23,19 @@
 			<!-- The navigation bar. -->
 			<a href="Default.aspx">Homepage</a>
 			<a href="Android.aspx">Android</a>	
+			<a href="Rooting.aspx">Rooting</a>
+			<a href="CustomRoms.aspx">Custom ROMs</a>
 		</nav>
 
 	</header>
 		
 	<section class="center">
-		<aside>
+		<aside class="read">
 			<!-- The side part of the website. -->
-				<p class="read">Here will be a table of content</p>
+			<!-- Supposed to include table of contents -->
+			<h3>Table of content</h3>
+			<asp:ContentPlaceHolder id="ContentPlaceHolderSide" runat="server">
+			</asp:ContentPlaceHolder>
 		</aside>
 			
 		<main class="read">
@@ -41,6 +46,8 @@
 	</section>
 			
 	<footer>
+		<asp:ContentPlaceHolder id="ContentPlaceHolderFooter" runat="server">
+		</asp:ContentPlaceHolder>
 			<p class="read">Here will be some other stuff</p>
 	</footer>
     </form>

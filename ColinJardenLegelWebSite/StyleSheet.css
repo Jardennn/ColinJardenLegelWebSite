@@ -11,10 +11,11 @@ header, .center, footer {
 
 header {
     /* Parent of the title and navbar properties */
-    
+   
     /*background-color: white;*/
     background-color: #12161F;
     margin-bottom: 5px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header_top {
@@ -86,4 +87,17 @@ footer {
 
 .read {
     color: #E0E6ED;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+    color: #00FF9D;
+}
+
+a:visited {
+    color: #00FF26;
+}
+
+a:hover {
+    color: #2CAB7A;
 }
