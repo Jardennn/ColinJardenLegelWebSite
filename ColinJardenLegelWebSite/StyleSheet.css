@@ -101,3 +101,40 @@ a:visited {
 a:hover {
     color: #2CAB7A;
 }
+
+footer {
+    justify-content: center;
+    display: flex;
+}
+
+#backtop {
+    display: block;
+    font-size: 20px;
+    color: #00FF9D;
+}
+
+aside.read {
+    text-align: left;
+    padding-left: 10px;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+aside ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+    aside ul li ul {
+        margin-left: 20px;
+        padding-left: 10px;
+    }
+
+    aside ul li a {
+        padding: 5px 0;
+        display: block;
+    }

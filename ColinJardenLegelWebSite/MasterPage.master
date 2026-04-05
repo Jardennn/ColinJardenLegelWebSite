@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿	<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -16,7 +16,7 @@
 		<section class="header_top">				
 			<!-- The title of the whole website, static for all pages. -->
 			<img src="images/logo.png" width="85px" height="85px" alt="Bugdroid in recovery mode, used as logo for the website." />
-				<h1 class="read">Android, custom ROMs and rooting</h1>
+				<h1 class="read" id="top">Android, custom ROMs and rooting</h1>
 		</section>
 			
 		<nav class="main_nav">   	
@@ -46,9 +46,8 @@
 	</section>
 			
 	<footer>
-		<asp:ContentPlaceHolder id="ContentPlaceHolderFooter" runat="server">
-		</asp:ContentPlaceHolder>
-			<p class="read">Here will be some other stuff</p>
+		<!--"Back to top" button-->
+		<a href="#top" class="read" id="backtop">Click here to go back to top.</a>
 	</footer>
     </form>
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
