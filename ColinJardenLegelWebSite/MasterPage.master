@@ -1,4 +1,4 @@
-﻿	<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -11,12 +11,17 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <!--<form id="form1" runat="server">-->
     <header>
 		<section class="header_top">				
 			<!-- The title of the whole website, static for all pages. -->
 			<img src="images/logo.png" width="85px" height="85px" alt="Bugdroid in recovery mode, used as logo for the website." />
 				<h1 class="read" id="top">Android, custom ROMs and rooting</h1>
+			
+			<section class="header_date">
+				<asp:Label ID="DateLabel" runat="server"></asp:Label>
+				<asp:Image ID="DayImage" runat="server"/>
+			</section>
 		</section>
 			
 		<nav class="main_nav">   	
@@ -25,6 +30,7 @@
 			<a href="Android.aspx">Android</a>	
 			<a href="Rooting.aspx">Rooting</a>
 			<a href="CustomRoms.aspx">Custom ROMs</a>
+			<a class="login_logout" ID="LoginLogout" runat="server"></a>
 		</nav>
 
 	</header>
@@ -49,7 +55,7 @@
 		<!--"Back to top" button-->
 		<a href="#top" class="read" id="backtop">Click here to go back to top.</a>
 	</footer>
-    </form>
+    <!--</form>-->
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>
 </body>
