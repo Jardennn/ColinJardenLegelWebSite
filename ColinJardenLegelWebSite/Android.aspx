@@ -12,7 +12,7 @@
         <ul>
             <li>The history and evolution of Android</li>
             <li>How the Android system is built and how does it work (The stack)</li>
-            <li>Different vanilla versions of Android</li>
+            <li>The evolution and eras of Android versions</li>
             <li>The open source philosophy</li>
         </ul>
     </section>
@@ -92,14 +92,49 @@
 
     <hr />
 
-   <!-- <section id="version">
-        <h2>Vanilla Android versions</h2>
-        <p>Android has seen various vanilla versions for it's OS. adding new features, fixing bugs, adding security patches and developing the Android system altogether.</p>
+   <section id="evolutions">
+        <h2>Versions evolutions</h2>
+        <p>Android has seen various versions for it's OS. adding new features, fixing bugs, adding security patches and developing the Android system altogether.</p>
+        <p>This section talks about how Android changed with the versions it has seen. Talking about eras from one version period to the next.</p>
 
-    </section> -->
+        <div class="era">
+            <h3>The Wild West (1.0-2.3, 2008-2010)</h3>
+            <p>When Android was more open. Android shipped with unlocked bootloaders on many devices by default, root exploits were trivial and often permanent, and the ecosystem was fragmented in ways that benefited tinkerers.</p>
+            <p>Custom ROMs like CyanogenMod thrived because manufacturers barely had a grip on their own software.</p>
+            <p>This is the era where "rooting" meant a time of fun and not a calculated risk.</p>
+        </div>
+        
+        <div class="era">
+            <h3>The Split (Android 3.0-4.4, 2011-2013)</h3>
+            <p>Android matured fast but inconsistently. Google introduced Verified Boot and stricter partition schemes, but manufactorer and carrier fragmentation meant the security posture was really uneven.</p>
+            <p>Some devices were still trivially rootable, other were locked down hard (HTC Bootloader Unlock, Sony's official unlock programs emerged).</p>
+            <p>This is also the golden age for TWRP and ClockworkMod, rooting culture peaked culturally even as the walls started going up.</p>
+        </div>
 
-    <!-- The versions section is going to be worked on in the future, for continuing working on it just uncomment. -->
-    <!-- TODO: add the other 2 points in the page and link them in the table of content. -->
+       <div class="era">
+           <h3>The walls get higher (Android 5.0-8.0, 2014-2017</h3>
+           <p>Lollipop's (Android 5) SELinux enforcement, dm-verity, and SafetyNet arriving as a tripwire changed everything. Rooting went from a fun hobby to a game of a whack-a-mole.</p>
+           <p>Magisk was born here specifically because systemless root was needed to hide from SafetyNet.</p>
+           <p>The cat-and-mouse between Google/hardened apps and the rooting community became the defining dynamic of this era. </p>
+       </div>
+
+       <div class="era">
+           <h3>The Lockdown (Android 9-12, 2018-2021)</h3>
+           <p>StrongBox, hardware-backed attestation, and Play Integrity's tightening grip. OEM bootloader policied hardened industry-wide.</p>
+           <p>Rooting was still possible but increasingly costly, it took voiding warranties, banking apps not working properly, and OTA update problems.</p>
+           <p>The casual rooter largely disappeared and the community became smaller and more technical.</p>
+       </div>
+
+       <div class="era">
+           <h3>The Compliance (Android 13-16, 2022-2025)</h3>
+           <p>Play Integrity API replaced SafetyNet, hardware assestation became near-universal, and even Magisk's author largely moved on. The gap between "rooted device" and "fully functional daily driver" widened significantly.</p>
+           <p>The community adapted (shizuku, adb-based approaches, per-app spoofing) but mainstream rooting as it existed in the first era covered here is effectively gone for most users.</p>
+       </div>
+    </section>
+
+    <section id="opensource">
+
+    </section>
 
 </asp:Content>
 

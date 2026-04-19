@@ -1,4 +1,4 @@
-﻿﻿html {
+﻿html {
     /*direction: rtl;*/
     direction: ltr;
 }
@@ -31,6 +31,8 @@ header {
 
 #DateLabel {
     flex: 1;
+    color: #E0E6ED;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 #DayImage {

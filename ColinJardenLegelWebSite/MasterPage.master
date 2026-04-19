@@ -11,7 +11,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <!--<form id="form1" runat="server">-->
     <header>
 		<section class="header_top">				
 			<!-- The title of the whole website, static for all pages. -->
@@ -55,7 +54,6 @@
 		<!--"Back to top" button-->
 		<a href="#top" class="read" id="backtop">Click here to go back to top.</a>
 	</footer>
-    <!--</form>-->
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>
 </body>

@@ -22,8 +22,5 @@ public partial class Login : System.Web.UI.Page
                 LoginResult.InnerText = " שםמשתמשאוסיסמהאינםנכונים ";
             }
         }
-        Session.Abandon();
-
-        Response.Redirect("Default.aspx");
     }
 }
