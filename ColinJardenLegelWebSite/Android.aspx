@@ -13,7 +13,7 @@
             <li>The history and evolution of Android</li>
             <li>How the Android system is built and how does it work (The stack)</li>
             <li>The evolution and eras of Android versions</li>
-            <li>The open source philosophy</li>
+            <li>How open-source is related and important for Android</li>
         </ul>
     </section>
 
@@ -97,43 +97,64 @@
         <p>Android has seen various versions for it's OS. adding new features, fixing bugs, adding security patches and developing the Android system altogether.</p>
         <p>This section talks about how Android changed with the versions it has seen. Talking about eras from one version period to the next.</p>
 
-        <div class="era">
+        <div class="era" id="1era">
             <h3>The Wild West (1.0-2.3, 2008-2010)</h3>
             <p>When Android was more open. Android shipped with unlocked bootloaders on many devices by default, root exploits were trivial and often permanent, and the ecosystem was fragmented in ways that benefited tinkerers.</p>
             <p>Custom ROMs like CyanogenMod thrived because manufacturers barely had a grip on their own software.</p>
             <p>This is the era where "rooting" meant a time of fun and not a calculated risk.</p>
         </div>
         
-        <div class="era">
+        <div class="era" id="2era">
             <h3>The Split (Android 3.0-4.4, 2011-2013)</h3>
             <p>Android matured fast but inconsistently. Google introduced Verified Boot and stricter partition schemes, but manufactorer and carrier fragmentation meant the security posture was really uneven.</p>
             <p>Some devices were still trivially rootable, other were locked down hard (HTC Bootloader Unlock, Sony's official unlock programs emerged).</p>
             <p>This is also the golden age for TWRP and ClockworkMod, rooting culture peaked culturally even as the walls started going up.</p>
         </div>
 
-       <div class="era">
+       <div class="era" id="3era">
            <h3>The walls get higher (Android 5.0-8.0, 2014-2017</h3>
            <p>Lollipop's (Android 5) SELinux enforcement, dm-verity, and SafetyNet arriving as a tripwire changed everything. Rooting went from a fun hobby to a game of a whack-a-mole.</p>
            <p>Magisk was born here specifically because systemless root was needed to hide from SafetyNet.</p>
            <p>The cat-and-mouse between Google/hardened apps and the rooting community became the defining dynamic of this era. </p>
        </div>
 
-       <div class="era">
+       <div class="era" id="4era">
            <h3>The Lockdown (Android 9-12, 2018-2021)</h3>
            <p>StrongBox, hardware-backed attestation, and Play Integrity's tightening grip. OEM bootloader policied hardened industry-wide.</p>
            <p>Rooting was still possible but increasingly costly, it took voiding warranties, banking apps not working properly, and OTA update problems.</p>
            <p>The casual rooter largely disappeared and the community became smaller and more technical.</p>
        </div>
 
-       <div class="era">
+       <div class="era" id="5era">
            <h3>The Compliance (Android 13-16, 2022-2025)</h3>
            <p>Play Integrity API replaced SafetyNet, hardware assestation became near-universal, and even Magisk's author largely moved on. The gap between "rooted device" and "fully functional daily driver" widened significantly.</p>
            <p>The community adapted (shizuku, adb-based approaches, per-app spoofing) but mainstream rooting as it existed in the first era covered here is effectively gone for most users.</p>
        </div>
     </section>
 
+    <hr />
+    
     <section id="opensource">
+        <h2>What is "Open source" and what does it have to do with Android</h2>
+        <p>This section will cover what is the idea of OSS (open source software) and it's connection to Android, Custom ROMs and rooting.</p>
 
+        <div id="opensourcedef">
+            <h3>What is open source</h3>
+            <p>Open source in software mainly means that the development and the software's code is open for the public, anyone can read it, modify it, build on it and even contribute to it.</p>
+            <p>Open source software are often free and are mostly non-profit, the developer's only income from their open source projects are from donations.</p>
+        </div>
+
+        <div id="androidoss">
+            <h3>How is Android connected to OSS</h3>
+            <p>Android itself is built on an open source project, the AOSP (Android Open Source Project) it is the reason Android exists.</p>
+            <p>Google released the core of Android publicly, and that single decision meant manufacturers could build on it, developers could explore it and the rooting community could temper with it and rebuild it for their own intent.</p>
+            <p>Without Android being open source, Android would've been just another closed system like iOS - you get what you're given.</p> 
+        </div>
+
+        <div id="matter">
+            <h3>Why does this matter for the users and the community</h3>
+            <p>Android being open source is important also for the user and not just the developers. For regular people, it means one can fix what Google or the manufacturers won't. Bloatware, slow updates, locked features. open source is why alternative exist.</p>
+        </div>
     </section>
 
 </asp:Content>
@@ -146,6 +167,7 @@
         <li>
             <a href="#header">Page header</a>
         </li>
+        
         <li>
             <a href="#history">History</a>
             <ul>
@@ -154,8 +176,29 @@
                 <li><a href="#2020s">2020s</a></li>
             </ul>
         </li>
+        
         <li>
             <a href="#stack">The Stack</a>
+        </li>
+        
+        <li>
+            <a href="#evolutions">Evolution</a>
+            <ul>
+                <li><a href="#1era">1st era</a></li>
+                <li><a href="#2era">2nd era</a></li>
+                <li><a href="#3era">3rd era</a></li>
+                <li><a href="#4era">4th era</a></li>
+                <li><a href="#5era">5th era</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#opensource">Open source</a>
+            <ul>
+                <li><a href="#opensourcedef">Open-source defenition</a></li>
+                <li><a href="#androidoss">Android and open-source</a></li>
+                <li><a href="#matter">The matter of OSS in Android</a></li>
+            </ul>
         </li>
     </ul>
 </asp:Content>

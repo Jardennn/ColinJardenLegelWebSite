@@ -50,9 +50,9 @@
 		</main>
 	</section>
 			
-	<footer>
+	<footer class="read">
 		<!--"Back to top" button-->
-		<a href="#top" class="read" id="backtop">Click here to go back to top.</a>
+		<a href="#top">Click here to go back to top.</a>
 	</footer>
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>
