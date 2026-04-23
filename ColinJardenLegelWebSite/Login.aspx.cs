@@ -11,7 +11,7 @@ public partial class Login : System.Web.UI.Page
     {
         if (IsPostBack)
         {
-            if (Request.Form["userName"] == "test" && Request.Form["password"] == "1234")
+            if (Request.Form["userName"] == "test" && Request.Form["password"] == "1234" || Request.Form["userName"] == "avi" && Request.Form["password"] == "4321")
             {
                 Session["userName"] = Request.Form["userName"];
                 Session["isLoggedIn"] = true;
@@ -19,7 +19,7 @@ public partial class Login : System.Web.UI.Page
             }
             else
             {
-                LoginResult.InnerText = " שםמשתמשאוסיסמהאינםנכונים ";
+                LoginResult.InnerText = "Username or password are incorrect";
             }
         }
     }

@@ -17,17 +17,17 @@ public partial class MasterPage : System.Web.UI.MasterPage
             string dayOfWeek = DateTime.Now.DayOfWeek.ToString();
             string imagePath = GetImagePathForDay(dayOfWeek);
             DayImage.ImageUrl = imagePath;
-            DayImage.AlternateText = $"Image for {dayOfWeek}";
+            DayImage.AlternateText = "Image for " + dayOfWeek;
 
             if ((bool)Session["isLoggedIn"])
             {
                 LoginLogout.HRef = "Logout.aspx";
-                LoginLogout.InnerText = "שלום, " + Session["userName"] + "(לחץ ליציאה)";
+                LoginLogout.InnerText = "Hello, " + Session["userName"] + "(Click for logout)";
             }
             else
             {
                 LoginLogout.HRef = "Login.aspx";
-                LoginLogout.InnerText = "כניסה";
+                LoginLogout.InnerText = "Login";
             }
 
         }
