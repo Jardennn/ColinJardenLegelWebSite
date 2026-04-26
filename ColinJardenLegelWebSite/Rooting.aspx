@@ -19,6 +19,14 @@
         </ul>
     </section>
 
+    <section id="risksandbenefits">
+        <h2>The risks and the benefits of rooting your device</h2>
+
+        <div id="risks">
+
+        </div>
+    </section>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
 </asp:Content>
