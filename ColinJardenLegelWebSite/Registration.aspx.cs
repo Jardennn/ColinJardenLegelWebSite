@@ -134,6 +134,24 @@ public partial class Registration : System.Web.UI.Page
         // ולהחזיר:
         // return false;
 
+        string id = idNum.Value;
+        if (id.Length != 9)
+        {
+            RegistrationResult.InnerText += "ID should consist of 9 numbers";
+            return false;
+        }
+
+        for (int i = 0; i<id.Length; i++)
+        {
+            if (id[i] < '0' || id[i] > '9')
+            {
+                RegistrationResult.InnerText += "ID should have only numbers in it";
+                return false;
+            }
+        }
+
+
+
         return true;
     }
 
@@ -147,6 +165,28 @@ public partial class Registration : System.Web.UI.Page
         // RegistrationResult.InnerText
         // וסיים את הפעולה עם:
         // return false;
+
+        string phoneN = phone.Value;
+        if (phoneN.Length != 10)
+        {
+            RegistrationResult.InnerText += "Phone number should be 10 numbers long";
+            return false;
+        }
+
+        if (phoneN[0] != '0')
+        {
+            RegistrationResult.InnerText += "Phone number should start with 0";
+            return false;
+        }
+
+        for (int i = 0; i < phoneN.Length; i++)
+        {
+            if (phoneN[i] < '0' || phoneN[i] > '9')
+            {
+                RegistrationResult.InnerText += "Phone number should have only numbers in it";
+                return false;
+            }
+        }
 
         return true;
     }
@@ -162,6 +202,28 @@ public partial class Registration : System.Web.UI.Page
         // IndexOf
         // במקרה שאחד התנאים לא מתקיים, הוסף הודעת שגיאה מתאימה והחזר:
         // return false;
+
+        string email = mail.Value;
+        int Sindx = email.IndexOf('@');
+        int dotindx = email.IndexOf('.');
+        
+        if(Sindx == -1)
+        {
+            RegistrationResult.InnerText += "The Email should contain an @ character";
+            return false;
+        }
+
+        if(dotindx == -1)
+        {
+            RegistrationResult.InnerText += "The Email should contain an . character";
+            return false;
+        }
+
+        if(Sindx > dotindx)
+        {
+            RegistrationResult.InnerText += "In the Email the @ character should be before the . character.";
+            return false;
+        }
 
         return true;
     }
