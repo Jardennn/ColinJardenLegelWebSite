@@ -27,8 +27,9 @@
 			<!-- The navigation bar. -->
 			<a href="Default.aspx">Homepage</a>
 			<a href="Android.aspx">Android</a>	
-			<a href="Rooting.aspx">Rooting</a>
+			<!--<a href="Rooting.aspx">Rooting</a>-->
 			<a href="CustomRoms.aspx">Custom ROMs</a>
+			<a class="authorized" ID="RootingP" runat="server"></a>
 			<a class="login_logout" ID="LoginLogout" runat="server"></a>
 		</nav>
 

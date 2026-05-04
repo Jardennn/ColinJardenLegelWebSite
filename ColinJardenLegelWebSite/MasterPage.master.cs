@@ -23,11 +23,16 @@ public partial class MasterPage : System.Web.UI.MasterPage
             {
                 LoginLogout.HRef = "Logout.aspx";
                 LoginLogout.InnerText = "Hello, " + Session["userName"] + "(Click for logout)";
+                
+                RootingP.InnerText = "Rooting";
+                RootingP.HRef = "Rooting.aspx";
             }
             else
             {
                 LoginLogout.HRef = "Login.aspx";
                 LoginLogout.InnerText = "Login";
+                
+                RootingP.Visible = false; // Hide the rooting link if not logged in.
             }
 
         }
