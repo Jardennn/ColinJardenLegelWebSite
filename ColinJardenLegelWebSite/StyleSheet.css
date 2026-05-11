@@ -166,3 +166,11 @@ aside ul {
         padding: 5px 0;
         display: block;
     }
+
+.adminTable tr:nth-child(even) {
+ /*   background-color: lightgray; */
+}
+
+.adminTable, .adminTable th, .adminTable td {
+    border: 1px solid #007024;
+}

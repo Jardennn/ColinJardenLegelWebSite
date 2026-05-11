@@ -25,6 +25,7 @@
         // Code that runs when a new session is started
         Session["userName"] = "";
         Session["isLoggedIn"] = false;
+        Session["isAdmin"] = false;
 
     }
 

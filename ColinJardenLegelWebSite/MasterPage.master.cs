@@ -32,7 +32,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
                 LoginLogout.HRef = "Login.aspx";
                 LoginLogout.InnerText = "Login";
                 
-                RootingP.Visible = false; // Hide the rooting link if not logged in.
+                RootingP.Visible = false; // Hide the rooting link if not logged in. 
             }
 
         }
