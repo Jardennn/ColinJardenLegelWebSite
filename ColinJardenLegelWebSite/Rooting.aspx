@@ -53,6 +53,9 @@
             <li>Why rooting is important</li>
             <li>How to root an Android device</li>
         </ul>
+
+        <img src="images/rooting/rooted.png" alt="A screenshot of an Android device logged as root in Termux" height="25%" width="25%"/>
+        <p style="margin-top:5px">A screenshot of an Android device logged as root in Termux, showing that the device is rooted.</p>
     </section>
 
     <hr />
@@ -71,7 +74,7 @@
                     <p>Just like in the custom ROMs tradeoff, those apps may not work for security reasons. Rooting may be more strict to these kinds of apps as it means getting full control of the device.</p>
                 </li>
                 
-                <li>Bricking
+                <li><a href="https://en.wikipedia.org/wiki/Brick_(electronics)">Bricking</a>
                     <p>There is always a risk of bricking your device, with rooting that risk increases. Rooting gets you control of everything that is also below user level and if you mess up with the levels below the user it could mess the system up too.</p>
                 </li>
 
@@ -148,8 +151,11 @@
     
     <section id="howto">
         <h2>How to root an Android device</h2>
-        <p>This section will explain only about Magisk, KernelSU might come soon here.</p>
+        <p>This section will explain only about <a href="https://github.com/topjohnwu/Magisk">Magisk</a>, <a href="https://kernelsu.org/">KernelSU</a> might come soon here.</p>
         <p>Download mode/fastboot will simply be called fastboot for an easier way to mark the bootloader menu.</p>
+
+        <img src="images/rooting/Magisk.png" alt="The magisk logo" height="25%" width="25%"/>
+        <p style="margin-top: 5px">The logo of Magisk, a popular and widely used rooting tool.</p>
 
         <div id="preq">
             <h3>Prerequisites</h3>
@@ -175,7 +181,7 @@
 
         <div>
             <h4 id="start">Getting started</h4>
-            <p>First of all, you'll have to install the Magisk APK onto your Android phone.</p>
+            <p>First of all, you'll have to install the <a href="https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk">Magisk APK</a> onto your Android phone.</p>
             <p>I'm guessing you know how to install APKs.</p>
             
             <hr />

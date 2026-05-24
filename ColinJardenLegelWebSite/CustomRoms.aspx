@@ -29,7 +29,7 @@
     <section id="header">
     <h1>Custom ROMs</h1>
     <p>Custom ROMs are modified versions of Android made by the community rather than the official phone manufacturers although you can think of the software the manufacturers deploy are themselves "custom ROMs".</p>
-    <p>Popular custom ROMs are: LineageOS, CRdroid, GrapheneOS, and much more.</p>
+    <p>Popular custom ROMs are: <a href="https://lineageos.org/">LineageOS</a>, <a href="https://crdroid.net/">CRdroid</a>, <a href="https://grapheneos.org/">GrapheneOS</a>, and much more.</p>
     <p>This page will cover:</p>
     <ul>
         <li>What are custom ROMs</li>
@@ -37,6 +37,9 @@
         <li>Pros, tradeoffs and potential consequences</li>
         <li>Prerequisites for installing an average custom ROM</li>
     </ul>
+
+    <img src="images/customroms/Lineage.png" alt="The LineageOS logo" height="25%" width="25%"/>
+    <p style="margin-top: 5px">The LineageOS logo, the most common and widely used custom ROM.</p>
     </section>
 
     <hr />
@@ -107,7 +110,7 @@
         <div id="consenquences">
             <h3>Potential consenquences</h3>
             <ul>
-                <li>Bricking your device 
+                <li><a href="https://en.wikipedia.org/wiki/Brick_(electronics)">Bricking your device </a>
                     <p>You can brick your device if the installation process goes wrong or some circumstances.</p></li>
                 <li>Data loss 
                     <p>You are guaranteed to lose all of your data during installation process, installing will wipe your device entirely.</p></li>
@@ -147,6 +150,9 @@
                 <p>ADB won't talk to the device if those options are disabled. Important to enable those options in order to change the phone up with a computer.</p>
             </li>
         </ul>
+
+        <img src="images/customroms/DeveloperOptions.png" alt="Screenshot of developer options" height="25%" width="25%"/>
+        <p style="margin-top: 5px">A screenshot of the developer options menu</p>
     </section>
 
 
