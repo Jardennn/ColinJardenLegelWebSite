@@ -17,7 +17,7 @@ public partial class Registration : System.Web.UI.Page
             if (Form_Validation() && Insert_Into_Database())
             {
                 RegistrationResult.InnerText =
-                        firstName.Value + ", רישום מוצלח, יש לעבור לדף הכניסה.";
+                        firstName.Value + " Registration successful, please proceed to the login page.";
             }
         }
     }
@@ -41,7 +41,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (fname.Length < 2)
         {
-            RegistrationResult.InnerText += "שם פרטי חייב להכיל לפחות שני תווים. ";
+            RegistrationResult.InnerText += "First name must contain at least two characters.";
             return false;
         }
 
@@ -54,7 +54,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (lname.Length < 2)
         {
-            RegistrationResult.InnerText += "שם משפחה חייב להכיל לפחות שני תווים. ";
+            RegistrationResult.InnerText += "Surname must contain at least two characters.";
             return false;
         }
 
@@ -91,7 +91,7 @@ public partial class Registration : System.Web.UI.Page
         // קוד שמוודא שהסיסמה בין 6 ל-10 תווים בלבד
         if (password.Length < 6 || password.Length > 10)
         {
-            RegistrationResult.InnerText += "הסיסמה חייבת להכיל בין 6 ל-10 תווים. ";
+            RegistrationResult.InnerText += "The password should be between 6 and 10 characters long.";
             return false;
         }
 
@@ -109,14 +109,14 @@ public partial class Registration : System.Web.UI.Page
         }
         if (!letterExist || !numberExist)
         {
-            RegistrationResult.InnerText += "הסיסמה חייבת להכיל אותיות ומספרים. ";
+            RegistrationResult.InnerText += "The password should contain both letters and numbers.";
             return false;
         }
 
         // קוד לוידוא סיסמה ווידוא סיסמה זהים
         if (password != pswdV)
         {
-            RegistrationResult.InnerText += "הסיסמה ווידוא הסיסמה אינם זהים. ";
+            RegistrationResult.InnerText += "The password and password confirmation do not match.";
             return false;
         }
 
@@ -220,9 +220,9 @@ public partial class Registration : System.Web.UI.Page
             return false;
         }
 
-        if(Sindx > dotindx)
+        if(Sindx == -1 || email.IndexOf('.', Sindx) == -1)
         {
-            RegistrationResult.InnerText += "In the Email the @ character should be before the . character.";
+            RegistrationResult.InnerText += "There should be a . character after the @ character";
             return false;
         }
 
@@ -233,7 +233,7 @@ public partial class Registration : System.Web.UI.Page
     {
         if (!approval.Checked)
         {
-            RegistrationResult.InnerText += "יש לאשר את תקנון האתר. ";
+            RegistrationResult.InnerText += "You must agree to the website terms and conditions.";
             return false;
         }
 
@@ -250,7 +250,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (dt.Rows.Count > 0)
         {
-            RegistrationResult.InnerText = "שם משתמש קיים במערכת. אנא בחר.י שם אחר.";
+            RegistrationResult.InnerText = "Username already exists in the system. Please choose a different username.";
             return false;
         }
 

@@ -14,9 +14,9 @@
         <li><a href="#importance">Importance of custom ROMs</a></li>
         <li><a href="#proscons">Pros, tradeoffs and potential consequences</a>
             <ul>
-                <li><a href="pros">Pros</a></li>
-                <li><a href="tradeoffs">Tradeoffs</a></li>
-                <li><a href="consequences">Potential Consequences</a></li>
+                <li><a href="#pros">Pros</a></li>
+                <li><a href="#tradeoffs">Tradeoffs</a></li>
+                <li><a href="#consenquences">Potential Consequences</a></li>
             </ul>
         </li>
         <li><a href="#preq">Prerequisites</a></li>
